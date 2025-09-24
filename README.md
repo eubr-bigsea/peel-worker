@@ -25,6 +25,9 @@ Clone the docker-lemonade repository:
 ```
 git clone https://github.com/eubr-bigsea/docker-lemonade.git
 cd docker-lemonade
+git checkout develop
+git submodule foreach 'git checkout develop'
+git submodule foreach 'git pull develop'
 ```
 
 Inside docker-lemonade repository, clone both peel repositories:
